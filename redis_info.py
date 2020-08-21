@@ -142,7 +142,7 @@ def parse_info(info_lines):
                              % line)
             continue
 
-        key, val = line.split(':')
+        key, val = line.split(':', 1)
 
         # Handle multi-value keys (for dbs and slaves).
         # db lines look like "db0:keys=10,expire=0"
